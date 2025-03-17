@@ -14,7 +14,7 @@ do
     int n = ConsoleExtension.GetInt("Ingrese el valor de n:");
     int p = ConsoleExtension.GetInt("Ingrese el valor de p:");
 
-    int[,] resultado = MultiplicarMatrices(m, n, p);
+    int[,] resultado = MultiplyMatrices(m, n, p);
 
 
     do
@@ -24,7 +24,7 @@ do
 
 } while (answer.Equals("s", StringComparison.CurrentCultureIgnoreCase));
 
-static int[,] MultiplicarMatrices(int m, int n, int p)
+static int[,] MultiplyMatrices(int m, int n, int p)
 {
     
     int[,] A = new int[m, n];
@@ -63,19 +63,19 @@ static int[,] MultiplicarMatrices(int m, int n, int p)
 
    
     Console.WriteLine("\n*** A ***");
-    ImprimirMatriz(A);
+    PrintMatrix(A);
 
     Console.WriteLine("\n*** B ***");
-    ImprimirMatriz(B);
+    PrintMatrix(B);
 
     Console.WriteLine("\n*** C ***");
-    ImprimirMatriz(C);
+    PrintMatrix(C);
 
     return C;
 }
 
 
-static void ImprimirMatriz(int[,] matriz)
+static void PrintMatrix(int[,] matriz)
 {
     int filas = matriz.GetLength(0);
     int columnas = matriz.GetLength(1);

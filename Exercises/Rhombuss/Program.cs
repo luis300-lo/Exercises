@@ -14,12 +14,12 @@ do
 
     if (n % 2 == 0)
     {
-        Console.WriteLine("El tamaño debe ser un número impar.");
+        Console.WriteLine("El tamaño tiene que ser un número impar...");
         continue;
     }
 
 
-    DibujarRombo(n);
+    CalculateRhombus(n);
 
 
 
@@ -30,7 +30,7 @@ do
 
 } while (answer.Equals("s", StringComparison.CurrentCultureIgnoreCase));
 
-static void DibujarRombo(int n)
+static void CalculateRhombus(int n)
 {
     char[,] rombo = new char[n, n];
 

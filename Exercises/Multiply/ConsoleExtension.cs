@@ -8,10 +8,6 @@ namespace Multiply
 {
     public class ConsoleExtension
     {
-        public static void DibujarRombo(int n)
-        {
-            throw new NotImplementedException();
-        }
 
         public static int GetInt(string message)
         {
